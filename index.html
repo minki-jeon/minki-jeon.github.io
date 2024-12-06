@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- TODO. TITLE, favicon, 한글 텍스트 적용되는 폰트 변경-->
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -38,6 +38,7 @@
 
 <body class="index-page">
 
+    <!-- TODO. leftbar 공통 파일 (* 메뉴 및 섹션 순서 변경 예정 )-->
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
@@ -61,7 +62,6 @@
       <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
     </div>
 
-    <!-- TODO. nav-manu 공통 파일 (* 메뉴/섹션 순서 변경 )-->
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
@@ -323,7 +323,7 @@
 
     <!-- Resume Section -->
     <section id="resume" class="resume section">
-        <!-- TODO. 요약, 학력+자격증, 교육, 경력사항 -->
+        <!-- TODO. Resume(이력): 본인소개 요약 + 학력/자격증 + 교육 + 경력사항 -->
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
@@ -595,19 +595,23 @@
         <!-- TODO. 경력기술서 - 프로젝트명 , 링크 - 각 프로젝트의 세부내용 페이지 -->
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <h2>Main Work Experience</h2>
+        <p>메인으로 참여한 업무 프로젝트로 클릭 시, 해당 프로젝트의 주요업무와 성과 등의 상세내용 페이지로 이동합니다. </p>
       </div><!-- End Section Title -->
 
       <div class="container">
-
+        <!-- TODO. 아이콘 이미지 변경 -->
+         <!-- TODO. h4와 ul 텍스트 줄간격이 일정하도록 스타일 수정 -->
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
             <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <h4 class="title"><a href="work-details.html" class="stretched-link">월드컵 특집 페이지 개발</a></h4>
+              <ul>
+                <li><em>개발기간 : 2022. 10 ~ 2022. 12</em></li>
+                <li><em>역할 및 기여도 : 풀스택 개발자 (100%)</em></li>
+              </ul>
             </div>
           </div>
           <!-- End Service Item -->
@@ -615,40 +619,55 @@
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
             <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">원사 포장 자동화 <br /> 창고관리시스템(WMS) 개발</a></h4>
+              <ul>
+                <li><em>개발기간 : 2021. 10 ~ 2022. 10</em></li>
+                <li><em>역할 및 기여도 : 풀스택 개발자 (40%)</em></li>
+              </ul>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
             <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">홈페이지&자원봉사정산시스템 <br /> 서비스통합 리뉴얼 홈페이지 하자보수</a></h4>
+              <ul>
+                <li><em>개발기간 : 2021. 04 ~ 2021. 12</em></li>
+                <li><em>역할 및 기여도 : 풀스택 개발자 (100%)</em></li>
+              </ul>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
             <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">알루미늄코일 자동화 <br /> 창고관리시스템(WMS) 개발</a></h4>
+              <ul>
+                <li><em>개발기간 : 2021. 03 ~ 2021. 10</em></li>
+                <li><em>역할 및 기여도 : 풀스택 개발자 (40%)</em></li>
+              </ul>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
             <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
             <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">교육인생이모작지원센터 홈페이지 <br /> 및 자원봉사정산시스템 유지보수</a></h4>
+              <ul>
+                <li><em>개발기간 : 2020. 08 ~ 2021. 03</em></li>
+                <li><em>역할 및 기여도 : 풀스택 개발자 (100%)</em></li>
+              </ul>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
             <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
             <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Eiusmod Tempor</a></h4>
-              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">정책기획위원회 홈페이지 유지보수</a></h4>
+              <ul>
+                <li><em>개발기간 : 2020. 08 ~ 2022. 05</em></li>
+                <li><em>역할 및 기여도 : 풀스택 개발자 (100%)</em></li>
+              </ul>
             </div>
           </div><!-- End Service Item -->
 
@@ -657,7 +676,7 @@
       </div>
 
     </section><!-- /Services Section -->
-<!-- TODO. 삭제 -->
+<!-- TODO. 섹션 삭제 -->
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section light-background">
 
