@@ -255,15 +255,19 @@
   <script>
     
     //* TODO. detail-list의 메뉴 클릭 이벤트 >> active, display:block/none
+    let divDetail1 = document.getElementById("detail1");
+    let divDetail2 = document.getElementById("detail2");
+    let divDetail3 = document.getElementById("detail3");
     document.querySelectorAll('#detail-list a').forEach(detail => {
       detail.addEventListener('click', function(e) {
         detailsListClick();
         // console.log("this.target == " + this.target);
         // console.log("this.hash = " + this.hash);
         this.classList.toggle('active');
-        document.getElementById("detail1").style.display = "none";
-        document.getElementById("detail2").style.display = "none";
-        document.getElementById("detail3").style.display = "none";
+
+        if (divDetail1) divDetail1.style.display = "none";
+        if (divDetail2) divDetail2.style.display = "none";
+        if (divDetail3) divDetail3.style.display = "none";
         document.querySelector(this.hash).style.display = "block";
       });
     });
@@ -271,7 +275,7 @@
     let detailsList = document.querySelectorAll('#detail-list a');
     function detailsListClick() {
       detailsList.forEach(d => {
-        console.log(">>>>  " + d.hash);
+        // console.log(">>>>  " + d.hash);
         d.classList.remove("active");
       })
     }
