@@ -1,5 +1,6 @@
 
 //* include Html-file load (header, footer)
+//* Local 에서 동작을 할 수 없으므로 서비스용에서 사용
 (function(){
     function includeHtml() {
         const includeTarget = document.querySelectorAll('.incFile');
