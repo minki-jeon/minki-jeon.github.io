@@ -1,9 +1,65 @@
 
+/*
+** 스크롤 동작 스크립트 (ref. ChatGPT)
+* TODO. 소스 분석, 구조 수정, 기존 템플릿 스크롤 스크립트 삭제 가능 여부 확인
+* TODO. 스크립트 추가 후, a해시태그에 url 삽입되지않은것과 새로고침할 때 해시태그로 이동되지 않는 이슈 분석 및 수정
+ */
+  let navmenulinks = document.querySelectorAll('.navmenu a');
+  // Handle smooth scrolling and dropdown toggling
+  navmenulinks.forEach(navmenulink => {
+    navmenulink.addEventListener('click', function (e) {
+      if (this.parentElement.classList.contains('dropdown')) {
+        e.preventDefault(); // Prevent default behavior for dropdown links
+
+        // Toggle dropdown menu
+        let dropdown = this.parentElement;
+        const isOpen = dropdown.classList.contains('open');
+        dropdown.classList.toggle('open');
+
+        // Smooth scroll to the section if dropdown was not already open
+        if (!isOpen && this.hash) {
+          let targetSection = document.querySelector(this.hash);
+          if (targetSection) {
+            targetSection.scrollIntoView({
+              behavior: 'smooth',
+            });
+          }
+        }
+      } else {
+        // For normal links, smooth scroll to the section
+        if (this.hash) {
+          e.preventDefault();
+          let targetSection = document.querySelector(this.hash);
+          if (targetSection) {
+            targetSection.scrollIntoView({
+              behavior: 'smooth',
+            });
+          }
+        }
+      }
+    });
+  });
+
+  // Close dropdown menus when clicking outside
+  document.addEventListener('click', function (event) {
+    console.log("click=======");
+    document.querySelectorAll('.dropdown').forEach(dropdown => {
+      let dropdownMenu = dropdown.querySelector('ul');
+      console.log(dropdownMenu);
+      if (dropdownMenu && !dropdown.contains(event.target)) {
+        dropdownMenu.classList.remove('dropdown-active');
+      }
+    });
+  });
+
+
+
+  
   /**
    * (/assets/js/main.js) Toggle mobile nav dropdowns
    * 메뉴 텍스트에 드롭다운 이벤트 적용
    */
-  //* TODO. a#services 에 onclick 으로 동작 방식 변경
+  //* TODO. 스크롤+드롭다운 이벤트 정상 동작된 후에는 'dropdown-menu-test' 클래스명 변경 
   document.querySelectorAll('.navmenu .dropdown-menu-test').forEach(navmenu => {
     navmenu.addEventListener('click', function(e) {
     
