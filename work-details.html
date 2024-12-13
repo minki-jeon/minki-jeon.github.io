@@ -35,6 +35,9 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  
+  <link href="css/comn.css" rel="stylesheet">
 </head>
 
 <body class="service-details-page">
@@ -63,12 +66,14 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
+        <!-- TOOD. 메뉴에 index.html 링크걸어둘지 고민-->
         <li><a href="#hero"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li class="dropdown"><a href="#services" class="dropdown-menu-test"><i class="bi bi-menu-button navicon"></i> <span>Job Experience</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
+        <li class="dropdown"><a href="#services" class="dropdown-menu-test active"><i class="bi bi-menu-button navicon"></i> <span>Job Experience</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul class="dropdown-active">
+            <!-- TODO. viewJob 참조하여 active 추가 -->
             <li><a href="./work-details.html?viewJob=job1">특집 페이지 개발</a></li>
             <li><a href="./work-details.html?viewJob=job2">WMS 개발 (1)</a></li>
             <li><a href="./work-details.html?viewJob=job3">홈페이지 하자보수</a></li>
@@ -77,6 +82,7 @@
             <li><a href="./work-details.html?viewJob=job6">홈페이지 유지보수 (2)</a></li>
           </ul>
         </li>
+<!--        
         <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="#">Dropdown 1</a></li>
@@ -94,6 +100,7 @@
             <li><a href="#">Dropdown 4</a></li>
           </ul>
         </li>
+-->        
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
@@ -105,11 +112,12 @@
     <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Service Details</h1>
+        <h1 class="mb-2 mb-lg-0">Job Experience</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Service Details</li>
+            <li class="current">Job Experience</li>
+            <!-- TODO. viewJob 참조하여 li 추가 -->
           </ol>
         </nav>
       </div>
@@ -636,7 +644,6 @@
       jobSec.forEach(jobSec => {
         if (! jobSec.id) return false;
         if (jobSec.id == viewJob) jobSec.style.display = "block";
-        // else jobSec.remove();
       })
     }
     window.addEventListener('load', viewJobLoad);
@@ -653,6 +660,8 @@
     let divDetail3 = document.querySelector(viewHash+' #detail3');
     document.querySelectorAll(viewHash+' #detail-list a').forEach(detail => {
       detail.addEventListener('click', function(e) {
+        e.preventDefault();
+
         detailsListClick();
         
         this.classList.toggle('active');
