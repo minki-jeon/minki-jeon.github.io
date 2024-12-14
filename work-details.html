@@ -74,12 +74,12 @@
         <li class="dropdown"><a href="#services" class="dropdown-menu-test active"><i class="bi bi-menu-button navicon"></i> <span>Job Experience</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul class="dropdown-active">
             <!-- TODO. viewJob 참조하여 active 추가 -->
-            <li><a href="./work-details.html?viewJob=job1">특집 페이지 개발</a></li>
-            <li><a href="./work-details.html?viewJob=job2">WMS 개발 (1)</a></li>
-            <li><a href="./work-details.html?viewJob=job3">홈페이지 하자보수</a></li>
-            <li><a href="./work-details.html?viewJob=job4">WMS 개발 (2)</a></li>
-            <li><a href="./work-details.html?viewJob=job5">홈페이지 유지보수 (1)</a></li>
-            <li><a href="./work-details.html?viewJob=job6">홈페이지 유지보수 (2)</a></li>
+            <li id="deep1"><a href="./work-details.html?viewJob=job1">특집 페이지 개발</a></li>
+            <li id="deep2"><a href="./work-details.html?viewJob=job2">WMS 개발 (1)</a></li>
+            <li id="deep3"><a href="./work-details.html?viewJob=job3">홈페이지 하자보수</a></li>
+            <li id="deep4"><a href="./work-details.html?viewJob=job4">WMS 개발 (2)</a></li>
+            <li id="deep5"><a href="./work-details.html?viewJob=job5">홈페이지 유지보수 (1)</a></li>
+            <li id="deep6"><a href="./work-details.html?viewJob=job6">홈페이지 유지보수 (2)</a></li>
           </ul>
         </li>
 <!--        
@@ -115,8 +115,9 @@
         <h1 class="mb-2 mb-lg-0">Job Experience</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Job Experience</li>
+            <li><a href="./index.html">Home</a></li>
+            <li>Job Experience</li>
+            <li class="current">#current</li>
             <!-- TODO. viewJob 참조하여 li 추가 -->
           </ol>
         </nav>
@@ -638,13 +639,23 @@
     //get url params
     const urlParams = new URLSearchParams(window.location.search);
     let viewJob = urlParams.get("viewJob") ?? "job1";
-    //* container job div control
+    //* container job div control (section)
     let jobSec = document.querySelectorAll('section div.container');
+    // get deepmenu text
+    let deepMenu = "deep" + viewJob.slice(-1);
     function viewJobLoad() {
       jobSec.forEach(jobSec => {
         if (! jobSec.id) return false;
+        // contents
         if (jobSec.id == viewJob) jobSec.style.display = "block";
       })
+      
+      // left-deepmenu
+      let deepMenuEl = document.getElementById(deepMenu).querySelector('a');
+      deepMenuEl.classList.add('active');
+      
+      // upper-menu
+      document.querySelector('nav.breadcrumbs .current').innerText = deepMenuEl.text;
     }
     window.addEventListener('load', viewJobLoad);
 
