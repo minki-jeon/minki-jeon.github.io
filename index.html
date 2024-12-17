@@ -60,23 +60,24 @@
 
     <!-- TODO. 아래 sns-icon 영역은 이력서 등 서류 파일 링크 아이콘으로 대체 --> 
     <div class="social-links text-center">
+      <a href="https://github.com/minki-jeon" class="github"><i class="bi bi-github"></i></a>
+      <!--
       <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
       <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
       <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
       <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
       <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    -->
     </div>
 
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#skills"><i class="bi bi-laptop navicon"></i> Skills</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <!-- TODO. 메뉴명 변경(Job Exp), Dropdown으로 변경 -->
         <li class="dropdown"><a href="#services" class="dropdown-menu-test"><i class="bi bi-menu-button navicon"></i> <span>Job Experience</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <!-- TODO. 상세페이지로 접속했을 때 해당 드롭다운메뉴에 'active' 적용되도록 수정 -->
             <li><a href="./work-details.html?viewJob=job1">특집 페이지 개발</a></li>
             <li><a href="./work-details.html?viewJob=job2">WMS 개발 (1)</a></li>
             <li><a href="./work-details.html?viewJob=job3">홈페이지 하자보수</a></li>
@@ -85,6 +86,7 @@
             <li><a href="./work-details.html?viewJob=job6">홈페이지 유지보수 (2)</a></li>
           </ul>
         </li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
 <!--        
         <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
@@ -104,7 +106,7 @@
           </ul>
         </li>
 -->        
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <!-- <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li> -->
       </ul>
     </nav>
   </header>
@@ -179,9 +181,9 @@
     </section><!-- /About Section -->
 
     <!-- Stats Section -->
-    <section id="stats" class="stats section">
+    <!-- <section id="stats" class="stats section"> -->
         <!-- TODO. 삭제 또는 대체 가능한 정보 고민 (수치로 표현할 수 있는 본인의 정보, ex. 본인의 능력치 등) -->
-
+<!--
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
@@ -193,7 +195,7 @@
               <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
             </div>
           </div><!-- End Stats Item -->
-
+<!--
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
               <i class="bi bi-journal-richtext"></i>
@@ -201,7 +203,7 @@
               <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
             </div>
           </div><!-- End Stats Item -->
-
+<!--
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
               <i class="bi bi-headset"></i>
@@ -209,7 +211,7 @@
               <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
             </div>
           </div><!-- End Stats Item -->
-
+<!--
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
               <i class="bi bi-people"></i>
@@ -217,12 +219,12 @@
               <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
             </div>
           </div><!-- End Stats Item -->
-
+<!--
         </div>
 
       </div>
 
-    </section><!-- /Stats Section -->
+    </section>--><!-- /Stats Section -->
 
     <!-- Skills Section -->
     <section id="skills" class="skills section light-background">
@@ -432,8 +434,95 @@
 
     </section><!-- /Resume Section -->
 
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+        <!-- TODO. 경력기술서 - 프로젝트명 , 링크 - 각 프로젝트의 세부내용 페이지 -->
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Job Experience</h2>
+        <p>메인으로 참여한 업무 프로젝트로 클릭 시, 해당 프로젝트의 주요업무와 성과 등의 상세내용 페이지로 이동합니다. </p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <!-- TODO. 아이콘 이미지 변경 (개발 / 하자보수 / 유지보수 icon 구분) -->
+         <!-- TODO. h4와 ul 텍스트 줄간격이 일정하도록 스타일 수정 -->
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+            <div>
+              <h4 class="title"><a href="./work-details.html?viewJob=job1" class="stretched-link">월드컵 특집 페이지 개발</a></h4>
+              <ul>
+                <li><em>개발기간 : 2022. 10 ~ 2022. 12</em></li>
+                <li><em>역할 및 기여도 : 풀스택 개발자 (100%)</em></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+            <div>
+              <h4 class="title"><a href="./work-details.html?viewJob=job2" class="stretched-link">원사 포장 자동화 <br /> 창고관리시스템(WMS) 개발</a></h4>
+              <ul>
+                <li><em>개발기간 : 2021. 10 ~ 2022. 10</em></li>
+                <li><em>역할 및 기여도 : 풀스택 개발자 (40%)</em></li>
+              </ul>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+            <div>
+              <h4 class="title"><a href="./work-details.html?viewJob=job3" class="stretched-link">홈페이지&자원봉사정산시스템 <br /> 서비스통합 리뉴얼 홈페이지 하자보수</a></h4>
+              <ul>
+                <li><em>개발기간 : 2021. 04 ~ 2021. 12</em></li>
+                <li><em>역할 및 기여도 : 풀스택 개발자 (100%)</em></li>
+              </ul>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+            <div>
+              <h4 class="title"><a href="./work-details.html?viewJob=job4" class="stretched-link">알루미늄코일 자동화 <br /> 창고관리시스템(WMS) 개발</a></h4>
+              <ul>
+                <li><em>개발기간 : 2021. 03 ~ 2021. 10</em></li>
+                <li><em>역할 및 기여도 : 풀스택 개발자 (40%)</em></li>
+              </ul>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+            <div>
+              <h4 class="title"><a href="./work-details.html?viewJob=job5" class="stretched-link">교육인생이모작지원센터 홈페이지 <br /> 및 자원봉사정산시스템 유지보수</a></h4>
+              <ul>
+                <li><em>개발기간 : 2020. 08 ~ 2021. 03</em></li>
+                <li><em>역할 및 기여도 : 풀스택 개발자 (100%)</em></li>
+              </ul>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
+            <div>
+              <h4 class="title"><a href="./work-details.html?viewJob=job6" class="stretched-link">정책기획위원회 홈페이지 유지보수</a></h4>
+              <ul>
+                <li><em>개발기간 : 2020. 08 ~ 2022. 05</em></li>
+                <li><em>역할 및 기여도 : 풀스택 개발자 (100%)</em></li>
+              </ul>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
+    <section id="portfolio" class="portfolio section">
         <!-- TODO. 포트폴리오 - Tab1) 업무 프로젝트, Tab2) 토이 프로젝트 작업물 github-repo 등 Detail 링크 -->
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -607,102 +696,18 @@
 
     </section><!-- /Portfolio Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
-        <!-- TODO. 경력기술서 - 프로젝트명 , 링크 - 각 프로젝트의 세부내용 페이지 -->
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Job Experience</h2>
-        <p>메인으로 참여한 업무 프로젝트로 클릭 시, 해당 프로젝트의 주요업무와 성과 등의 상세내용 페이지로 이동합니다. </p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-        <!-- TODO. 아이콘 이미지 변경 (개발 / 하자보수 / 유지보수 icon 구분) -->
-         <!-- TODO. h4와 ul 텍스트 줄간격이 일정하도록 스타일 수정 -->
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-            <div>
-              <h4 class="title"><a href="./work-details.html?viewJob=job1" class="stretched-link">월드컵 특집 페이지 개발</a></h4>
-              <ul>
-                <li><em>개발기간 : 2022. 10 ~ 2022. 12</em></li>
-                <li><em>역할 및 기여도 : 풀스택 개발자 (100%)</em></li>
-              </ul>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-            <div>
-              <h4 class="title"><a href="./work-details.html?viewJob=job2" class="stretched-link">원사 포장 자동화 <br /> 창고관리시스템(WMS) 개발</a></h4>
-              <ul>
-                <li><em>개발기간 : 2021. 10 ~ 2022. 10</em></li>
-                <li><em>역할 및 기여도 : 풀스택 개발자 (40%)</em></li>
-              </ul>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-            <div>
-              <h4 class="title"><a href="./work-details.html?viewJob=job3" class="stretched-link">홈페이지&자원봉사정산시스템 <br /> 서비스통합 리뉴얼 홈페이지 하자보수</a></h4>
-              <ul>
-                <li><em>개발기간 : 2021. 04 ~ 2021. 12</em></li>
-                <li><em>역할 및 기여도 : 풀스택 개발자 (100%)</em></li>
-              </ul>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
-            <div>
-              <h4 class="title"><a href="./work-details.html?viewJob=job4" class="stretched-link">알루미늄코일 자동화 <br /> 창고관리시스템(WMS) 개발</a></h4>
-              <ul>
-                <li><em>개발기간 : 2021. 03 ~ 2021. 10</em></li>
-                <li><em>역할 및 기여도 : 풀스택 개발자 (40%)</em></li>
-              </ul>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
-            <div>
-              <h4 class="title"><a href="./work-details.html?viewJob=job5" class="stretched-link">교육인생이모작지원센터 홈페이지 <br /> 및 자원봉사정산시스템 유지보수</a></h4>
-              <ul>
-                <li><em>개발기간 : 2020. 08 ~ 2021. 03</em></li>
-                <li><em>역할 및 기여도 : 풀스택 개발자 (100%)</em></li>
-              </ul>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
-            <div>
-              <h4 class="title"><a href="./work-details.html?viewJob=job6" class="stretched-link">정책기획위원회 홈페이지 유지보수</a></h4>
-              <ul>
-                <li><em>개발기간 : 2020. 08 ~ 2022. 05</em></li>
-                <li><em>역할 및 기여도 : 풀스택 개발자 (100%)</em></li>
-              </ul>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
 <!-- TODO. 섹션 삭제 -->
     <!-- Testimonials Section -->
+<!--     
     <section id="testimonials" class="testimonials section light-background">
 
       <!-- Section Title -->
+<!--       
       <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
-
+<!--
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="swiper init-swiper">
@@ -745,7 +750,7 @@
                 <h4>Ceo &amp; Founder</h4>
               </div>
             </div><!-- End testimonial item -->
-
+<!--
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
@@ -758,7 +763,7 @@
                 <h4>Designer</h4>
               </div>
             </div><!-- End testimonial item -->
-
+<!--
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
@@ -771,7 +776,7 @@
                 <h4>Store Owner</h4>
               </div>
             </div><!-- End testimonial item -->
-
+<!--
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
@@ -784,7 +789,7 @@
                 <h4>Freelancer</h4>
               </div>
             </div><!-- End testimonial item -->
-
+<!--
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
@@ -797,7 +802,7 @@
                 <h4>Entrepreneur</h4>
               </div>
             </div><!-- End testimonial item -->
-
+<!--
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -807,14 +812,16 @@
     </section><!-- /Testimonials Section -->
 <!-- TODO. 삭제 -->
     <!-- Contact Section -->
+<!--     
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
+<!--       
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
-
+<!--
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
@@ -829,7 +836,7 @@
                   <p>A108 Adam Street, New York, NY 535022</p>
                 </div>
               </div><!-- End Info Item -->
-
+<!--
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
@@ -837,7 +844,7 @@
                   <p>+1 5589 55488 55</p>
                 </div>
               </div><!-- End Info Item -->
-
+<!--
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
@@ -845,7 +852,7 @@
                   <p>info@example.com</p>
                 </div>
               </div><!-- End Info Item -->
-
+<!--
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
@@ -885,7 +892,7 @@
               </div>
             </form>
           </div><!-- End Contact Form -->
-
+<!--
         </div>
 
       </div>
