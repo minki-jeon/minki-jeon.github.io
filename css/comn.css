@@ -1,8 +1,46 @@
 
-/* remove left-menubar */
-header{
-  -ms-overflow-style: none;
+  /* remove leftmenu scrollbar */
+  header{
+    -ms-overflow-style: none;
   }
   ::-webkit-scrollbar {
     display: none;
+  }
+
+  /* TODO. fonts.css */
+  @font-face {
+    font-family: 'NanumSquareNeo-Variable'; /*font 이름*/
+    font-style: 'normal'; /* font 스타일 정의 (기울임, 일반) */
+    font-weight: 400; /* font 굵기 정의 */
+    /* 브라우저&디바이스 환경에 따른 font 파일 위치 정의 */
+    src: url('../fonts/NanumSquareNeo-Variable.ttf'); /* IE9 Compat Modes */
+    src: url('../fonts/NanumSquareNeo-Variable.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/NanumSquareNeo-Variable.ttf') format('truetype'),
+        /*  Modern Browsers */ url('../fonts/NanumSquareNeo-Variable.ttf') format('truetype'), /* Modern Browsers */ url('../fonts/NanumSquareNeo-Variable.ttf') format('truetype'),
+        /* Safari, Android, iOS */ url('../fonts/NanumSquareNeo-Variable.ttf') format('truetype'); /* Legacy iOS */
+  }
+  @font-face {
+    font-family: 'NanumSquareRoundR'; /*font 이름*/
+    font-style: 'normal'; /* font 스타일 정의 (기울임, 일반) */
+    font-weight: 400; /* font 굵기 정의 */
+    /* 브라우저&디바이스 환경에 따른 font 파일 위치 정의 */
+    src: url('../fonts/NanumSquareRoundR.ttf'); /* IE9 Compat Modes */
+    src: url('../fonts/NanumSquareRoundR.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/NanumSquareRoundR.ttf') format('truetype'),
+        /*  Modern Browsers */ url('../fonts/NanumSquareRoundR.ttf') format('truetype'), /* Modern Browsers */ url('../fonts/NanumSquareRoundR.ttf') format('truetype'),
+        /* Safari, Android, iOS */ url('../fonts/NanumSquareRoundR.ttf') format('truetype'); /* Legacy iOS */
+  }
+  @font-face {
+    font-family: 'Paperlogy-6SemiBold';
+    src: url('../fonts/Paperlogy-6SemiBold.ttf') format('truetype');
+    /* src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2'); */
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* override font */
+  :root {
+    /* header */
+    --heading-font: NanumSquareNeo-Variable; 
+    /* body */
+    --default-font: NanumSquareRoundR;
+    /* navmanu */
+    --nav-font: Paperlogy-6SemiBold;
   }
