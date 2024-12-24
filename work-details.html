@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- TODO. TITLE, favicon, 한글 텍스트 적용되는 폰트 변경-->
-  <!-- TODO. work-details 1~6 병합 (url에서 get방식으로 받아와서 script에서 처리) -->
-<head>
+  <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Portfolio - JeonMinKi</title>
@@ -41,23 +39,18 @@
 </head>
 
 <body class="service-details-page">
-
-  <!-- TODO. leftbar 공통 파일 (* 메뉴 및 섹션 순서 변경 예정 )-->
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <!-- ReadyPlayMe를 이용하여 생성한 이미지 -->
+      <!-- ReadyPlayMe를 활용하여 생성한 이미지 -->
       <img src="img/img_profile_small.png" alt="" class="img-fluid rounded-circle">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
       <h1 class="sitename">전 민기</h1>
     </a>
 
-    <!-- TODO. 아래 sns-icon 영역은 이력서 등 서류 파일 링크 아이콘으로 대체 --> 
     <div class="social-links text-center">
       <a href="https://github.com/minki-jeon" class="github"><i class="bi bi-github"></i></a>
       <!--
@@ -87,33 +80,12 @@
           </ul>
         </li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-<!--        
-        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
-          </ul>
-        </li>
--->        
-        <!-- <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li> -->
       </ul>
     </nav>
 
   </header>
 
   <main class="main">
-      <!-- TODO. top-bar 공통파일, text수정 -->
     <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
@@ -123,7 +95,6 @@
             <li><a href="./index.html">Home</a></li>
             <li>Job Experience</li>
             <li class="current">#current</li>
-            <!-- TODO. viewJob 참조하여 li 추가 -->
           </ol>
         </nav>
       </div>
@@ -135,7 +106,6 @@
       <div class="container" id="job1" style="display:none">
 
         <div class="row gy-4">
-          <!-- TODO. 아래 메뉴의 a href 태그링크 대신 onclick 속성 추가하여 event 동작방식 변경 -->
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div id="detail-list" class="services-list">
               <a href="#detail1" class="active">주요업무 및 업무성과</a>
@@ -145,9 +115,8 @@
 
             <h4>월드컵 특집 페이지 개발</h4>
             <ul>
-              <!-- TODO. 글머리기호 적용 스타일 확인 / progress-bar -->
-              <li><em>개발기간 : 2021. 04 ~ 2021. 12</em></li>
-              <li><em>역할 및 기여도 : 풀스택 개발자 (100%)</em></li>
+              <li><i class="bi bi-dot"></i><em>개발기간 : 2021. 04 ~ 2021. 12</em></li>
+              <li><i class="bi bi-dot"></i><em>역할 및 기여도 : 풀스택 개발자 (100%)</em></li>
             </ul>
             <div class="skills-animation">
               <div class="progress">
@@ -242,9 +211,8 @@
 
             <h4>원사 포장 자동화 창고관리시스템(WMS) 개발</h4>
             <ul>
-              <!-- TODO. 글머리기호 적용 스타일 확인 / progress-bar -->
-              <li><em>개발기간 : 2021. 10 ~ 2022. 10</em></li>
-              <li><em>역할 및 기여도 : 풀스택 개발자 (40%)</em></li>
+              <li><i class="bi bi-dot"></i><em>개발기간 : 2021. 10 ~ 2022. 10</em></li>
+              <li><i class="bi bi-dot"></i><em>역할 및 기여도 : 풀스택 개발자 (40%)</em></li>
             </ul>
             <div class="skills-animation">
               <div class="progress">
@@ -343,9 +311,8 @@
 
             <h4>홈페이지&자원봉사정산시스템 서비스통합 리뉴얼 홈페이지 하자보수</h4>
             <ul>
-              <!-- TODO. 글머리기호 적용 스타일 확인 / progress-bar -->
-              <li><em>개발기간 : 2021. 04 ~ 2021. 12</em></li>
-              <li><em>역할 및 기여도 : 풀스택 개발자 (100%)</em></li>
+              <li><i class="bi bi-dot"></i><em>개발기간 : 2021. 04 ~ 2021. 12</em></li>
+              <li><i class="bi bi-dot"></i><em>역할 및 기여도 : 풀스택 개발자 (100%)</em></li>
             </ul>
             <div class="skills-animation">
               <div class="progress">
@@ -403,9 +370,8 @@
 
             <h4>알루미늄코일 자동화 창고관리시스템(WMS) 개발</h4>
             <ul>
-              <!-- TODO. 글머리기호 적용 스타일 확인 / progress-bar -->
-              <li><em>개발기간 : 2021. 03 ~ 2021. 10</em></li>
-              <li><em>역할 및 기여도 : 풀스택 개발자 (40%)</em></li>
+              <li><i class="bi bi-dot"></i><em>개발기간 : 2021. 03 ~ 2021. 10</em></li>
+              <li><i class="bi bi-dot"></i><em>역할 및 기여도 : 풀스택 개발자 (40%)</em></li>
             </ul>
             <div class="skills-animation">
               <div class="progress">
@@ -484,9 +450,8 @@
 
             <h4>교육인생이모작지원센터 홈페이지 및 자원봉사정산시스템 유지보수</h4>
             <ul>
-              <!-- TODO. 글머리기호 적용 스타일 확인 / progress-bar -->
-              <li><em>개발기간 : 2020. 08 ~ 2021. 03</em></li>
-              <li><em>역할 및 기여도 : 풀스택 개발자 (100%)</em></li>
+              <li><i class="bi bi-dot"></i><em>개발기간 : 2020. 08 ~ 2021. 03</em></li>
+              <li><i class="bi bi-dot"></i><em>역할 및 기여도 : 풀스택 개발자 (100%)</em></li>
             </ul>
             <div class="skills-animation">
               <div class="progress">
@@ -545,9 +510,8 @@
 
             <h4>정책기획위원회 홈페이지 유지보수</h4>
             <ul>
-              <!-- TODO. 글머리기호 적용 스타일 확인 / progress-bar -->
-              <li><em>개발기간 : 2020. 08 ~ 2022. 05</em></li>
-              <li><em>역할 및 기여도 : 풀스택 개발자 (100%)</em></li>
+              <li><i class="bi bi-dot"></i><em>개발기간 : 2020. 08 ~ 2022. 05</em></li>
+              <li><i class="bi bi-dot"></i><em>역할 및 기여도 : 풀스택 개발자 (100%)</em></li>
             </ul>
             <div class="skills-animation">
               <div class="progress">
@@ -583,7 +547,6 @@
             <!-- TODO. 이미지 변경 (프로젝트 관련 이미지 또는 로고 또는 메인페이지 일부 )-->
             <!-- <img src="assets/img/services.jpg" alt="" class="img-fluid services-img"> -->
             <h3>결과 </h3>
-            <!-- TODO. 글머리 기호 스타일 변경 -->
             <ul>
               <li><i class="bi bi-caret-right-fill"></i> <span>2022년 05월 위원회 폐지로 인해 대통령 기록관 이관 작업 후 유지보수 종료</span></li>
               <li><i class="bi bi-caret-right-fill"></i> <span>이슈사항 및 고객요청 80건 처리 100% 완료</span></li>
@@ -638,8 +601,6 @@
   <script src="assets/js/main.js"></script>
 
   <script>
-    //TODO. 스크립트 변수선언방식 (let,const,var), 변수명 정리
-    
     //* Load container job
     //get url params
     const urlParams = new URLSearchParams(window.location.search);
@@ -664,12 +625,7 @@
     }
     window.addEventListener('load', viewJobLoad);
 
-
-
-
-    //* TODO. detail-list의 메뉴 클릭 이벤트 >> active, display:block/none
-    // let viewSecEl = document.getElementById(viewJob);
-    // let divDetail_1 = viewSecEl.children.children
+    //* detail-list의 메뉴 클릭 이벤트 >> active, display:block/none
     let viewHash = '#'+viewJob;
     let divDetail1 = document.querySelector(viewHash+' #detail1');
     let divDetail2 = document.querySelector(viewHash+' #detail2');
@@ -694,8 +650,6 @@
         d.classList.remove("active");
       })
     }
-
-
 
   </script>
 
